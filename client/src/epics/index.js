@@ -41,7 +41,7 @@ const fetchUserEpic = action$ =>
 
 async function submitToServer(username, password) {
     try {
-        const response = await fetch('/api/token', {
+        const response = await fetch('/api/auth/token', {
             method: 'POST',
             headers: {
                 'Content-type': 'application/json',
@@ -74,7 +74,7 @@ const fetchSecterEpic = action$ =>
 async function getSecretToServer(token) {
     console.log('getSecrettoServer', token);
     try {
-        const response = await fetch('/api/user', {
+        const response = await fetch('/api/auth/user', {
             method: 'GET',
             headers: {
                 "Authorization": "JWT " + token

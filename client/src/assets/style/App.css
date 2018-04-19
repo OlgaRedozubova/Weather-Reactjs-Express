@@ -13,6 +13,10 @@ p{
   display: flex;
   flex-direction: column;
 }
+
+.img_logo {
+  height: 30px;
+}
 /*.App .top {*/
   /*display: flex;*/
   /*justify-content: space-between;*/
@@ -51,7 +55,7 @@ p{
 }
 
 .App-header .nav .selected {
-  color: #b3d7ff;
+  color: #b3d7ffgit ;
 }
 
 .home {

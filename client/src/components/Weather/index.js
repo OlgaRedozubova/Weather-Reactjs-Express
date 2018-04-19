@@ -1,39 +1,39 @@
 import React from 'react';
 import { Table } from 'react-bootstrap';
-// import d01 from '../../assets/images/01d.png';
+
+
+const my_getTime = (ms) => {
+    ms = ms + '000';
+    const date = new Date(+ms);
+    let h = date.getHours();
+    let m = date.getMinutes();
+    if (h < 10) {
+        h = '0' + h
+    }
+    if (m < 10) {
+        m = '0' + m
+    }
+    console.log(h, m);
+    return `${h}:${m}`;
+};
+
+const getDateNaw = () => {
+    let time = new Date().getTime();
+    let date = new Date(time);
+    let arrMonth = ["Jan","Febr","March","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
+    let h = date.getHours();
+    let mm = date.getMinutes();
+    let m = date.getMonth();
+    let d = date.getDate();
+    if (h < 10) { h = '0' + h }
+    if (mm < 10) { mm = '0' + mm }
+    if (d < 10) { d = '0' + d }
+
+    return `${h}:${mm}  ${arrMonth[m]} ${d}`;
+};
 
 export default(props) => {
     const town = props.town;
-
-    function my_getTime (ms) {
-        ms = ms + '000';
-        const date = new Date(+ms);
-        let h = date.getHours();
-        let m = date.getMinutes();
-        if (h < 10) {
-            h = '0' + h
-        }
-        if (m < 10) {
-            m = '0' + m
-        }
-        console.log(h, m);
-        return `${h}:${m}`;
-    }
-    function getDateNaw() {
-        let time = new Date().getTime();
-        let date = new Date(time);
-        let arrMonth = ["Jan","Febr","March","Apr","May","Jun","Jul","Aug","Sept","Oct","Nov","Dec"];
-        let h = date.getHours();
-        let min = date.getMinutes();
-        let m = date.getMonth();
-        let d = date.getDate();
-        if (h < 10) { h = '0' + h }
-        if (min < 10) { min = '0' + m }
-        if (d < 10) { d = '0' + d }
-
-        return `${h}:${m}  ${arrMonth[m]} ${d}`;
-    }
-
     return (
      <div>
        <div className="table_header">
@@ -50,19 +50,7 @@ export default(props) => {
 
 
          <Table striped bordered condensed hover>
-             <thead>
-             {/*<tr>*/}
-                 {/*<th colSpan="2">Weather in the {props.city}</th>*/}
-             {/*</tr>*/}
-             </thead>
-             <tbody>
-
-             {/*{Object.keys(town.main).map(id => (*/}
-                 {/*<tr key = {id}>*/}
-                     {/*<td>{id}: </td>*/}
-                     {/*<td>{town.main[id]}</td>*/}
-                 {/*</tr>*/}
-             {/*))}*/}
+            <tbody>
              <tr>
                  <td>Wind</td>
                  <td>Gentle Breeze, {town.wind.speed} m/s, South-southwest ({town.wind.deg})
@@ -96,9 +84,7 @@ export default(props) => {
                  <td>Geo coolds</td>
                  <td>[{town.coord.lat}, {town.coord.lon}]</td>
              </tr>
-
-
-             </tbody>
+            </tbody>
          </Table>
      </div>
     )

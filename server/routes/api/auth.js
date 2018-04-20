@@ -6,7 +6,7 @@ const auth = require("../../auth.js")(); //passport/ passport-jwt
 const users = require("../../db/users.js"); //users
 const config = require("../../config/config.js");
 
-router.route("/user")
+router.route("/secret")
     .get(auth.authenticate(), function(req, res) {
     console.log('server-users', users);
     for (key in users) {

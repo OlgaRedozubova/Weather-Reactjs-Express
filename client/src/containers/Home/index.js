@@ -215,7 +215,7 @@ getValidationState() {
                 <div>
                     <Grid>
                         <Row>
-                            <Col sm={6} md={4}>
+                            <Col sm={4} md={4}>
                                 {!this.state.isCity &&
                                 <div className="title_left">
                                     <h3>Укажите город</h3>
@@ -232,7 +232,7 @@ getValidationState() {
                                 </div>
                                 }
                             </Col>
-                            <Col sm={6} md={8}>
+                            <Col sm={8} md={8}>
                                 <Table bordered condensed hover>
                                     <thead>
                                     <tr>

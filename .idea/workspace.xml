@@ -2,11 +2,582 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dd866fea-3218-4ff9-9356-d7459dff368f" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/assets/style/App.css" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/assets/style/App.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Header/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Header/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/client/src/components/Weather/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/components/Weather/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/client/src/containers/Home/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/client/src/containers/Home/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/consts.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/users.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/jwt-vanilla.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.babelrc.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.editorconfig" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.eslintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.gitattributes" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.github/CONTRIBUTING.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.github/ISSUE_TEMPLATE.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.stylelintignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.stylelintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/.travis.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/CNAME" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/CODE_OF_CONDUCT.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/Gemfile" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/Gemfile.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/LICENSE" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/breakpoints.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/browser-bugs.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/browser-features.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/colors.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/examples.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/grays.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/nav.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/theme-colors.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_data/translations.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/ads.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/callout-danger-async-methods.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/callout-info-mediaqueries-breakpoints.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/callout-warning-color-assistive-technologies.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/docs-navbar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/docs-sidebar.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/favicons.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/footer.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/bootstrap.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/download.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/github.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/import.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/lightning.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/menu.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/slack.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/icons/twitter.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/scripts.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_includes/social.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_layouts/default.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_layouts/docs.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_layouts/examples.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_layouts/home.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_layouts/redirect.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_layouts/simple.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_plugins/bugify.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_plugins/callout.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_plugins/example.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/_plugins/markdown-block.rb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/brand/bootstrap-outline.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/brand/bootstrap-punchout.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/brand/bootstrap-social-logo.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/brand/bootstrap-social.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/brand/bootstrap-solid.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/css/docs.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/css/docs.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/bootstrap-stack.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/bootstrap-themes.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/android-chrome-192x192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/android-chrome-512x512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/apple-touch-icon.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/browserconfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/favicon-16x16.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/favicon-32x32.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/mstile-144x144.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/mstile-150x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/mstile-310x150.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/mstile-310x310.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/mstile-70x70.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/img/favicons/safari-pinned-tab.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/docs.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/src/application.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/src/ie-emulation-modes-warning.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/src/pwa.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/vendor/anchor.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/vendor/clipboard.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/vendor/holder.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/vendor/jquery-slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/js/vendor/popper.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_ads.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_algolia.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_anchor.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_brand.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_browser-bugs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_callouts.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_clipboard-js.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_colors.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_component-examples.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_content.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_examples.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_footer.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_masthead.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_sidebar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_skiplink.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_syntax.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/assets/scss/docs.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/.htmllintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/change-version.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/gcp-key.json.enc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/generate-sri.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/lint-vars.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/postcss.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/rollup.config.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/sauce_browsers.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/saucelabs-unit-test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/ship.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/upload-preview.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/vnu-jar.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/workbox.config.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/build/workbox.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/composer.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-grid.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-grid.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-grid.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-reboot.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-reboot.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-reboot.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap-reboot.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/css/bootstrap.min.css.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.bundle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.bundle.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.bundle.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/dist/js/bootstrap.min.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/about/brand.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/about/license.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/about/overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/about/translations.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/browser-bugs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/alerts.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/badge.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/breadcrumb.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/button-group.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/buttons.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/card.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/carousel.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/collapse.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/dropdowns.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/forms.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/input-group.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/jumbotron.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/list-group.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/modal.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/navbar.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/navs.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/pagination.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/popovers.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/progress.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/scrollspy.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/components/tooltips.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/content/code.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/content/figures.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/content/images.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/content/reboot.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/content/tables.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/content/typography.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/.stylelintrc" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/album/album.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/album/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/blog/blog.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/blog/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/carousel/carousel.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/carousel/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/checkout/form-validation.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/checkout/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/cover/cover.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/cover/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/dashboard/dashboard.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/dashboard/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/floating-labels/floating-labels.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/floating-labels/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/grid/grid.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/grid/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/jumbotron/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/jumbotron/jumbotron.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/navbar-bottom/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/navbar-fixed/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/navbar-fixed/navbar-top-fixed.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/navbar-static/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/navbar-static/navbar-top.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/navbars/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/navbars/navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/offcanvas/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/offcanvas/offcanvas.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/offcanvas/offcanvas.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/pricing/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/pricing/pricing.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/product/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/product/product.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/album.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/blog.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/carousel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/checkout.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/cover.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/dashboard.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/floating-labels.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/grid.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/jumbotron.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/navbar-bottom.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/navbar-fixed.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/navbar-static.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/navbars.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/offcanvas.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/pricing.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/product.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/sign-in.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/starter-template.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/sticky-footer-navbar.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/screenshots/sticky-footer.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/sign-in/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/sign-in/signin.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/starter-template/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/starter-template/starter-template.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/sticky-footer-navbar/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/sticky-footer-navbar/sticky-footer-navbar.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/sticky-footer/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/sticky-footer/sticky-footer.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/tooltip-viewport/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/tooltip-viewport/tooltip-viewport.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/examples/tooltip-viewport/tooltip-viewport.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/extend/approach.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/extend/icons.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/extend/index.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/accessibility.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/best-practices.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/browsers-devices.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/build-tools.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/contents.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/download.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/introduction.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/javascript.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/theming.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/getting-started/webpack.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/layout/grid.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/layout/media-object.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/layout/overview.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/layout/utilities-for-layout.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/migration.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/borders.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/clearfix.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/close-icon.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/colors.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/display.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/embed.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/flex.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/float.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/image-replacement.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/position.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/screenreaders.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/sizing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/spacing.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/text.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/vertical-align.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/docs/4.0/utilities/visibility.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/alert.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/button.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/carousel.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/collapse.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/dropdown.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/index.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/modal.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/popover.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/scrollspy.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/tab.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/tooltip.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/dist/util.js.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/src/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/karma.conf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/alert.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/button.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/carousel.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/collapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/dropdown.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/modal.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/popover.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/scrollspy.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/tab.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/tooltip.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/unit/util.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/vendor/jquery-1.9.1.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/vendor/qunit.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/vendor/qunit.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/alert.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/button.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/carousel.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/collapse.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/dropdown.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/modal.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/popover.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/scrollspy.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/tab.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/js/tests/visual/tooltip.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/nuget/MyGet.ps1" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/nuget/bootstrap.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/nuget/bootstrap.sass.nuspec" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/package.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/sache.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_breadcrumb.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_button-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_card.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_carousel.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_close.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_code.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_custom-forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_dropdown.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_functions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_images.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_input-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_jumbotron.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_media.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_mixins.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_modal.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_nav.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_navbar.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_popover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_print.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_progress.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_root.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_tables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_tooltip.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_transitions.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_type.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_utilities.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/_variables.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/bootstrap-grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/bootstrap-reboot.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/bootstrap.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_alert.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_background-variant.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_badge.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_border-radius.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_box-shadow.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_breakpoints.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_buttons.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_caret.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_forms.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_gradients.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_grid-framework.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_grid.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_hover.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_image.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_list-group.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_lists.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_nav-divider.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_navbar-align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_pagination.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_reset-text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_resize.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_screen-reader.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_size.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_table-row.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_text-emphasis.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_text-hide.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_text-truncate.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_transition.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/mixins/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_align.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_background.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_borders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_clearfix.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_display.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_embed.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_flex.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_float.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_position.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_screenreaders.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_sizing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_spacing.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_text.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/scss/utilities/_visibility.scss" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/bootstrap/sw.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/.bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/AUTHORS.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/bower.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/dist/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/dist/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/dist/jquery.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/dist/jquery.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/dist/jquery.slim.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/dist/jquery.slim.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/dist/jquery.slim.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/external/sizzle/LICENSE.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/external/sizzle/dist/sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/external/sizzle/dist/sizzle.min.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/external/sizzle/dist/sizzle.min.map" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/.eslintrc.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/jsonp.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/load.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/parseXML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/script.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/var/location.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/var/nonce.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/var/rquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/ajax/xhr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/attributes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/attributes/attr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/attributes/classes.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/attributes/prop.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/attributes/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/attributes/val.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/callbacks.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/DOMEval.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/access.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/camelCase.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/init.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/nodeName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/parseHTML.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/ready-no-deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/ready.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/readyException.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/stripAndCollapse.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/toType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/core/var/rsingleTag.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/addGetHookIf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/adjustCSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/curCSS.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/hiddenVisibleSelectors.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/showHide.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/var/cssExpand.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/var/getStyles.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/var/isHiddenWithinTree.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/var/rboxStyle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/var/rnumnonpx.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/css/var/swap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/data/Data.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/data/var/acceptData.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/data/var/dataPriv.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/data/var/dataUser.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/deferred.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/deferred/exceptionHook.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/deprecated.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/dimensions.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/effects.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/effects/Tween.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/effects/animatedSelector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/event.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/event/ajax.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/event/alias.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/event/focusin.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/event/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/event/trigger.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/exports/amd.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/exports/global.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/jquery.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/_evalUrl.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/buildFragment.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/getAll.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/setGlobalEval.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/var/rcheckableType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/var/rscriptType.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/var/rtagName.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/manipulation/wrapMap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/offset.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/queue.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/queue/delay.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/selector-native.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/selector-sizzle.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/selector.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/serialize.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/traversing.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/traversing/findFilter.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/traversing/var/dir.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/traversing/var/rneedsContext.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/traversing/var/siblings.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/ObjectFunctionString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/arr.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/class2type.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/concat.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/document.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/documentElement.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/fnToString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/getProto.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/hasOwn.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/indexOf.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/isFunction.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/isWindow.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/pnum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/push.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/rcssNum.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/rnothtmlwhite.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/slice.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/support.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/var/toString.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/vendor/bower_components/jquery/src/wrap.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/auth.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/api/weather.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/towns.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/server.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/towns.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/yarn.lock" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -25,26 +596,17 @@
           <file leaf-file-name=".gitignore" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="105">
-                  <caret line="7" selection-start-line="7" selection-end-line="7" />
+                <state relative-caret-position="15">
+                  <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="server.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/server.js">
+          <file leaf-file-name="package.json" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/server/package.json">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="20" selection-start-line="20" selection-end-line="20" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="consts.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/consts.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+                <state relative-caret-position="240">
+                  <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
                 </state>
               </provider>
             </entry>
@@ -52,7 +614,7 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/epics/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="299">
+                <state relative-caret-position="1260">
                   <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
                 </state>
               </provider>
@@ -61,7 +623,7 @@
           <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/Weather/index.js">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
+                <state relative-caret-position="390">
                   <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
                   <folding>
                     <element signature="e#0#26#0" expanded="true" />
@@ -70,11 +632,23 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/client/src/containers/Home/index.js">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="405">
+                  <caret line="234" column="38" selection-start-line="234" selection-start-column="38" selection-end-line="234" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#0#41#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/client/src/components/Header/index.js">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="270">
-                  <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+                  <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
                   <folding>
                     <element signature="e#0#27#0" expanded="true" />
                   </folding>
@@ -86,7 +660,7 @@
             <entry file="file://$PROJECT_DIR$/client/package.json">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="240">
-                  <caret line="16" column="20" lean-forward="true" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+                  <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
                 </state>
               </provider>
             </entry>
@@ -94,51 +668,14 @@
         </leaf>
       </split-first>
       <split-second>
-        <leaf>
-          <file leaf-file-name="towns.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/towns.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="30">
-                  <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
-                </state>
-              </provider>
-            </entry>
-          </file>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file leaf-file-name="App.css" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/client/src/assets/style/App.css">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="315">
-                  <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+                <state relative-caret-position="375">
+                  <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
                 </state>
               </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="towns.json" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/towns.json">
-              <provider selected="true" editor-type-id="text-editor">
-                <state>
-                  <caret column="135" selection-start-column="135" selection-end-column="135" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/routes/api/auth.js">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="494">
-                  <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="config.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/config/config.js">
-              <provider selected="true" editor-type-id="text-editor" />
-            </entry>
-          </file>
-          <file leaf-file-name="auth.js" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/auth.js">
-              <provider selected="true" editor-type-id="text-editor" />
             </entry>
           </file>
         </leaf>
@@ -157,7 +694,6 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/weather1.json" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/server3.js" />
         <option value="$PROJECT_DIR$/client/src/epics/index.js" />
         <option value="$PROJECT_DIR$/routes/api/auth.js" />
@@ -170,20 +706,21 @@
         <option value="$PROJECT_DIR$/client/src/components/Weather/index.js" />
         <option value="$PROJECT_DIR$/client/src/components/Header/index.js" />
         <option value="$PROJECT_DIR$/client/src/assets/style/App.css" />
+        <option value="$PROJECT_DIR$/client/src/containers/Home/index.js" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/server/package.json" />
       </list>
     </option>
   </component>
   <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER">
-    <package-json value="$PROJECT_DIR$/package.json" />
-  </component>
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="NodeModulesDirectoryManager">
     <handled-path value="$PROJECT_DIR$/client/node_modules" />
-    <handled-path value="$PROJECT_DIR$/node_modules" />
+    <handled-path value="$PROJECT_DIR$/server/node_modules" />
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-8" />
@@ -207,33 +744,7 @@
             <path>
               <item name="Weather-Reactjs-Express" type="b2602c69:ProjectViewProjectNode" />
               <item name="Weather-Reactjs-Express" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weather-Reactjs-Express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weather-Reactjs-Express" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weather-Reactjs-Express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weather-Reactjs-Express" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weather-Reactjs-Express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weather-Reactjs-Express" type="462c0819:PsiDirectoryNode" />
-              <item name="client" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="assets" type="462c0819:PsiDirectoryNode" />
-              <item name="style" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Weather-Reactjs-Express" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Weather-Reactjs-Express" type="462c0819:PsiDirectoryNode" />
-              <item name="db" type="462c0819:PsiDirectoryNode" />
+              <item name="server" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -250,6 +761,7 @@
     <property name="node.js.selected.package.prettier" value="" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
@@ -281,11 +793,14 @@
       <updated>1524142959329</updated>
       <workItem from="1524142962230" duration="819000" />
       <workItem from="1524143841174" duration="6207000" />
+      <workItem from="1524150135873" duration="74000" />
+      <workItem from="1524200776366" duration="927000" />
+      <workItem from="1524201760062" duration="529000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7026000" />
+    <option name="totallyTimeSpent" value="8556000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-1" y="25" width="1922" height="1032" extended-state="6" />
@@ -295,13 +810,13 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info active="true" anchor="bottom" id="Terminal" order="7" visible="true" weight="0.36" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info id="npm" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -325,7 +840,58 @@
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
-          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/epics/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Weather/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3510">
+          <caret line="234" column="38" selection-start-line="234" selection-start-column="38" selection-end-line="234" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/assets/style/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="915">
+          <caret line="61" column="16" lean-forward="true" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
         </state>
       </provider>
     </entry>
@@ -336,107 +902,71 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server3.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="303" selection-start-line="303" selection-end-line="303" />
-          <folding>
-            <element signature="e#886#1172#0" />
-            <element signature="e#1250#2112#0" />
-            <element signature="e#2164#2907#0" />
-            <element signature="e#3303#4498#0" />
-            <element signature="e#4542#5478#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/auth.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="494">
-          <caret line="52" column="24" selection-start-line="52" selection-start-column="24" selection-end-line="52" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/weather.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="690">
-          <caret line="313" selection-start-line="313" selection-end-line="313" selection-end-column="24" />
-          <folding>
-            <element signature="e#1383#1410#0" />
-            <element signature="e#2679#3422#0" />
-            <element signature="e#2811#3093#0" />
-            <element signature="e#3139#3199#0" />
-            <element signature="e#3650#3780#0" />
-            <element signature="e#3818#5006#0" />
-            <element signature="e#5050#5902#0" />
-            <element signature="e#5965#7146#0" />
-            <element signature="e#7209#8048#0" />
-            <element signature="e#8104#8253#0" />
-            <element signature="e#8291#9305#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/consts/consts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/towns.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="135" selection-start-column="135" selection-end-column="135" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/config.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/consts.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/auth.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" selection-start-line="20" selection-end-line="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/api/weather.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="390">
-          <caret line="54" column="17" selection-start-line="54" selection-start-column="17" selection-end-line="54" selection-end-column="17" />
-          <folding>
-            <element signature="n#!!block;n#getWeatherTowns#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/db/users.js">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js" />
+    <entry file="file://$PROJECT_DIR$/config/consts.js" />
     <entry file="file://$PROJECT_DIR$/client/src/epics/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
+        <state relative-caret-position="1305">
           <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Weather/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="210">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/towns.js" />
+    <entry file="file://$PROJECT_DIR$/towns.json" />
+    <entry file="file://$PROJECT_DIR$/routes/api/auth.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/assets/style/App.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="855">
+          <caret line="57" column="20" selection-start-line="57" selection-start-column="20" selection-end-line="57" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server.js" />
+    <entry file="file://$PROJECT_DIR$/config/consts.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/epics/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1305">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Weather/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
           <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
           <folding>
             <element signature="e#0#26#0" expanded="true" />
@@ -453,7 +983,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/client/src/components/Header/index.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="270">
+        <state relative-caret-position="225">
           <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
           <folding>
             <element signature="e#0#27#0" expanded="true" />
@@ -461,17 +991,94 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/routes/towns.js">
+    <entry file="file://$PROJECT_DIR$/routes/towns.js" />
+    <entry file="file://$PROJECT_DIR$/towns.json" />
+    <entry file="file://$PROJECT_DIR$/routes/api/auth.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/assets/style/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" column="25" lean-forward="true" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+        <state relative-caret-position="855">
+          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" lean-forward="true" selection-start-line="7" selection-end-line="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server3.js" />
+    <entry file="file://$PROJECT_DIR$/routes/api/auth.js" />
+    <entry file="file://$PROJECT_DIR$/routes/api.js" />
+    <entry file="file://$PROJECT_DIR$/consts/consts.js" />
+    <entry file="file://$PROJECT_DIR$/towns.json" />
+    <entry file="file://$PROJECT_DIR$/config/consts.js" />
+    <entry file="file://$PROJECT_DIR$/server.js" />
+    <entry file="file://$PROJECT_DIR$/routes/api/weather.js" />
+    <entry file="file://$PROJECT_DIR$/client/src/epics/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1260">
+          <caret line="87" column="1" selection-start-line="87" selection-start-column="1" selection-end-line="87" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/towns.js" />
     <entry file="file://$PROJECT_DIR$/client/src/assets/style/App.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="57" column="16" selection-start-line="57" selection-start-column="16" selection-end-line="57" selection-end-column="16" />
+        <state relative-caret-position="375">
+          <caret line="61" column="16" selection-start-line="61" selection-start-column="16" selection-end-line="61" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Header/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="1" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/components/Weather/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="27" selection-start-line="26" selection-start-column="27" selection-end-line="26" selection-end-column="27" />
+          <folding>
+            <element signature="e#0#26#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/client/src/containers/Home/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="234" column="38" selection-start-line="234" selection-start-column="38" selection-end-line="234" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#41#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="1" column="7" selection-start-line="1" selection-start-column="7" selection-end-line="1" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/package.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="25" lean-forward="true" selection-start-line="16" selection-start-column="25" selection-end-line="16" selection-end-column="25" />
         </state>
       </provider>
     </entry>

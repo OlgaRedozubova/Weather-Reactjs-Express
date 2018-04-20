@@ -9,4 +9,9 @@ export const AUTH_TOKEN = 'AUTH_TOKEN';
 export const AUTH_SECRET = 'AUTH_SECRET';
 export const AUTH_SECRET_OK = 'AUTH_SECRET_OK';
 
-export  const  INCREMENT_COUNTER = "INCREMENT_COUNTER";
+//--------------------------
+export const USERS_ALL = 'USERS_ALL';
+export const USER_ADD = 'USER_ADD';
+export const USER_DEL = 'USER_DEL';
+export const USER_GET = 'USER_GET';
+

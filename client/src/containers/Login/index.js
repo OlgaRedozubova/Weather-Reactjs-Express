@@ -20,12 +20,6 @@ class Login extends Component{
         this.setState({mess: ''})
     }
 
-    login = (e) => {
-        e.preventDefault();
-        this.props.onAddTodo('test');
-        //this.props.onAddTodo(this.UserInput.value) ; // + ввод с экрана + добавить проверку на корректность поля
-    };
-
     getSecret = () => {
         console.log('token!=', this.props.payload);
         this.props.getSecret(this.props.payload);
@@ -40,36 +34,15 @@ class Login extends Component{
     render() {
         window.localStorage.setItem('ls_token', this.props.token);
         window.localStorage.setItem('ls_username', this.props.username);
-
         const {from} = this.props.location.state || { from: { pathname: "/" } };
-
          if (isLogin()) {
               return <Redirect to={from} />;
          }
 
-
         return(
             <div className="login">
-
                 <LoginForm login = {this.auth}/>
-
-
-
-                {/*<button onClick={() => {this.props.singOut()}}>SingOut</button>*/}
-
-                {/*<div>*/}
-                    {/*<p>mes = {this.props.mess}</p>*/}
-                    {/*<p>username = {this.props.username}</p>*/}
-                    {/*<p>password = {this.props.password}</p>*/}
-                    {/*<p>token = {this.props.token}</p>*/}
-                    {/*<p>payload = {this.props.payload}</p>*/}
-                    {/*<p>isLogin = {this.props.isLogin.toString()}</p>*/}
-                {/*</div>*/}
-
-
                 {/*<button onClick={this.getSecret}>get secret message</button>*/}
-                {/*<div id="result"></div>*/}
-
             </div>
         )
     }

@@ -6,6 +6,7 @@ export default () => {
         <nav className="nav">
             <NavLink to="/" exact={true} activeClassName="selected">Home</NavLink>
             <NavLink to="/appPP" activeClassName="selected">Secret</NavLink>
+            <NavLink to="/users" activeClassName="selected">Users</NavLink>
             {/*<NavLink to="/login" activeClassName="selected">Sing In</NavLink>*/}
         </nav>
     )

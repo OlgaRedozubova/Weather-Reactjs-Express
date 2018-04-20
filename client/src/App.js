@@ -6,6 +6,7 @@ import './assets/style/App.css';
 import Home from './containers/Home';
 import Login from './containers/Login';
 import AppPP from './containers/AppPP';
+import Users from './containers/Users';
 
 import Header from './components/Header';
 import { isLogin } from './components/Auth';
@@ -40,6 +41,7 @@ class App extends Component {
                     <Route exact path="/" component={Home} />
                     <Route path="/login" component={Login} />
                     <PrivateRoute path="/appPP" component={AppPP} />
+                    <Route path="/users" component={Users} />
                 </div>
             </Router>
         );

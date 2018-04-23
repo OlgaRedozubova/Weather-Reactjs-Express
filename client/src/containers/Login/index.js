@@ -34,6 +34,7 @@ class Login extends Component{
     render() {
         window.localStorage.setItem('ls_token', this.props.token);
         window.localStorage.setItem('ls_username', this.props.username);
+        console.log('this.props', this.props);
         const {from} = this.props.location.state || { from: { pathname: "/" } };
          if (isLogin()) {
               return <Redirect to={from} />;

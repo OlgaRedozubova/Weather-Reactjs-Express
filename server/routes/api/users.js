@@ -1,44 +1,34 @@
 const express = require('express');
 const router = express.Router();
-
 const fs = require('fs');
-
 const bodyParser = require("body-parser");
 const jsonParser = bodyParser.json();
 
+const db = require('../../db/DataBaseUtils');
+
+db.setUpConnection();
+
 router.route('/')
     .get((req, res) => {
-        console.log('USERS_GET');
-        const content = fs.readFileSync("users.json", "utf8");
-        const users = JSON.parse(content);
-        res.send(users)
+        db.listUsers().then(data => res.send(data));
     })
     .post(jsonParser, (req, res) => {
-            if (!req.body) return res.sendStatus(400);
-            console.log('S_req.body', req.body);
+             if (!req.body) return res.sendStatus(400);
+             console.log('S_req.body', req.body);
 
-            const user = {
-                id: 5,
-                name: req.body.username,
-                towns:'Lviv'
-            };
-
-        console.log('user', user);
-                // req.body;//{name: townName};
-
-            fs.readFile("users.json", "utf8", function(err, file){
-                if(!err){
-                    const users = JSON.parse(file);
-                    users.push(user);
-                    const newFile = JSON.stringify(users);
-                    fs.writeFile("users.json", newFile, function (err) {
-                        if (!err) {
-                            const users = JSON.parse(newFile);
-                            res.send(users)
-                        }
-                    })
-                }
-            })
+             const user = {
+                 id: "5",
+                 name: req.body.username,
+                 password: 'test',
+                 towns: 'Lviv'
+             };
+             console.log('user',user);
+        db.createUser(user).then(
+            data => { db.listUsers().then(data => res.send(data));
+                // console.log('data', data);
+                // res.send(data);
+            }
+        );
         }
     )
     .put((req, res) => {
@@ -47,28 +37,12 @@ router.route('/')
     })
     .delete(jsonParser, (req,res) => {
             if (!req.body) return res.setStatus(400);
-            const user = req.body.user;
-            console.log('user', user);
-            fs.readFile("users.json", "utf8", function(err, file){
-                if(!err){
-                    const users = JSON.parse(file);
-                    const newArr = [];
-                    //-----------------------------
-                    for (key in users) {
-                        if (users[key].name.toUpperCase() !== user.name.toUpperCase()) {
-                            newArr.push(users[key]);
-                        }
-                    }
-                    //-----------------------------
-                    const newFile = JSON.stringify(newArr);
-                    fs.writeFile("users.json", newFile, function (err) {
-                        if (!err) {
-                            const users = JSON.parse(newFile);
-                            res.send(users);
-                        }
-                    });
-                }
-            });
+            //const user = req.body.user;
+            console.log('req.body.user', req.body.user);
+            db.deleteUser(req.body.user._id).then(
+                 data => { db.listUsers().then(data => res.send(data));}
+            //     //res.send(data)
+             );
         }
     );
 

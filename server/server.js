@@ -10,7 +10,21 @@ const apiUsers = require('./routes/api/users'); //router
 const auth = require("./auth.js")(); //passport/ passport-jwt
 //const
 const port = require("./config/consts.js").port;
+// const mongoUri = require("./config/consts").mongoUri;
+// //db
+// const mongoose = require('mongoose');
+// mongoose.connect(mongoUri);
 
+// const Schema = mongoose.Schema;
+//
+// const UsersSchema = new Schema({
+//     id     : { type: String, required: true },
+//     name      : { type: String},
+//     password     : { type: String },
+//     towns : { type: String }
+// });
+
+//const Users = mongoose.model('Users', UsersSchema);
 
 server.use(bodyParser.json());
 server.use(auth.initialize());

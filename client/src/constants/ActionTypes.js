@@ -11,6 +11,7 @@ export const AUTH_SECRET_OK = 'AUTH_SECRET_OK';
 
 //--------------------------
 export const USERS_ALL = 'USERS_ALL';
+export const USERS_FETCH = 'USERS_FETCH';
 export const USER_ADD = 'USER_ADD';
 export const USER_DEL = 'USER_DEL';
 export const USER_GET = 'USER_GET';

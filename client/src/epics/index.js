@@ -2,7 +2,7 @@ import { combineEpics } from 'redux-observable';
 import { authEpic, fetchUserEpic, fetchSecterEpic } from './authEpics.js';
 import { pingEpic } from './pingEpic.js';
 
-import  { addUserEpic } from './userEpics.js';
+import  { addUserEpic, fetchUsers, delUserEpic } from './userEpics.js';
 
 export default combineEpics(
     pingEpic,
@@ -10,6 +10,8 @@ export default combineEpics(
     fetchUserEpic,
     fetchSecterEpic,
 
-    addUserEpic
+    addUserEpic,
+    fetchUsers,
+    delUserEpic
 
 )

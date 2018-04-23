@@ -1,49 +1,30 @@
-import {USERS_ALL, USER_ADD, USER_DEL, USER_GET, AUTH_REQUEST, AUTH_TOKEN} from "../constants/ActionTypes";
+import {USERS_ALL, USER_ADD, USERS_FETCH, USER_DEL } from "../constants/ActionTypes";
 
-
-export const usersReducer = (state = { isPinging: false }, action) => {
+const INITIAL_STATE = {isPinging: false };
+export const usersReducer = (state = INITIAL_STATE, action) => {
     switch (action.type) {
-        case 'USERS_ALL':
-            return { isPinging: true };
-
-        case 'USER_ADD':
-            return { isPinging: false };
+        case USERS_ALL:
+            return {
+                isPinging: false,
+                users:action.users
+            };
+        case USERS_FETCH:
+            return{
+                isPinging: true
+            };
+        case USER_DEL:
+            return {
+                isPinging: true,
+                user: action.user
+            };
+        case USER_ADD:
+            //const newId = state.users
+            return {
+                isPinging: true,
+                username: action.username
+            };
 
         default:
             return state;
     }
 };
-
-//
-// const INITIAL_STATE = {};
-//
-// export const usersReducer = (state = INITIAL_STATE, action) => {
-//     switch (action.type) {
-//         case USER_ADD://AUTH_REQUEST
-//             return {
-//                 mess: 'OK',
-//                 payload: action.payload,
-//                 username: action.username,
-//                 password: action.password,
-//                 isLogin: false
-//             };
-//         case USERS_ALL://AUTH_TOKEN:
-//             return {
-//                 mess: 'Token',
-//                 payload: action.payload,
-//                 token: action.payload,
-//                 username: action.username,
-//                 isLogin: false
-//             };
-//
-//         // case USERS_ALL:
-//         //     return state;
-//             // return {
-//             //     ...state,
-//             //     [action.payload]:action.payload
-//             // };
-//
-//         default:
-//             return state;
-//     }
-// };

@@ -1,5 +1,5 @@
 import {AUTH_FAILURE, AUTH_REQUEST, AUTH_SUCCESS, AUTH_TOKEN, AUTH_SECRET, AUTH_SECRET_OK, AUTH_SINGOUT} from "../constants/ActionTypes";
-import { USERS_ALL, USER_ADD, USER_DEL, USER_GET } from "../constants/ActionTypes";
+import { USERS_ALL, USER_ADD, USERS_FETCH, USER_DEL, USER_GET } from "../constants/ActionTypes";
 
 export const ping = () => ({type: 'PING'});
 
@@ -61,44 +61,29 @@ export const authSingOut = () => (
 );
 
 //----------- USER
-//export const usersAll = () => ( { type: USERS_ALL} );
-//AUTH_REQUEST
-// export const userAdd = (username, password) => (
-//     {
-//         type: USER_ADD,
-//         payload: username,
-//         username:username,
-//         password: password
-//     }
-// );
-//
-//
-// //AUTH_TOKEN
-// export const usersAll = (token, username) => (
-//     {
-//         type: USERS_ALL,
-//         token: token,
-//         username: username,
-//         payload: token
-//     }
-// );
-
-
-export const userAdd = () => ({type: 'USER_ADD'});
-
-//export const userAdd = (username) => ( { type: USER_ADD, payload: username });
-// export const userAdd = (username, password) => (
-//     {
-//         type: USER_ADD,
-//         payload: username,
-//         username:username,
-//         password: password
-//     }
-// );
-
-export const userDel = () => (
+export const usersAll = (users) => (
     {
-        type: USER_DEL
+        type: USERS_ALL,
+        users
+    }
+);
+
+export const usersFetch = () => ({
+    type: USERS_FETCH
+});
+
+
+export const userAdd = (username) => (
+    {
+        type: 'USER_ADD',
+        username: username
+    }
+    );
+
+export const userDel = (user) => (
+    {
+        type: USER_DEL,
+        user
     }
 );
 export const userGet = () => (

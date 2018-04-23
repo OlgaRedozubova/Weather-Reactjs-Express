@@ -1,140 +1,150 @@
 import React, { Component } from 'react';
 import { Button, Form, FormGroup, InputGroup, FormControl, Table } from 'react-bootstrap';
-import {authSingOut, ping} from "../../actions";
-import {withRouter} from "react-router-dom";
 import {connect} from "react-redux";
 
-import { userAdd } from '../../actions/index';
-// import {connect} from "react-redux";
-// import {userAdd} from "../../actions";
-
-
-// let Users = ({ isPinging, userAdd }) => (
-//     <div className="container">
-//         <h1>It's secret page!!!</h1>
-//         <h2>is pinging: <strong>{isPinging.toString()}</strong></h2>
-//         <button onClick={userAdd}>Start PING</button>
-//     </div>
-// );
-
-
-
-
-
-
+import { userAdd, usersFetch, userDel } from '../../actions/index';
 
 class Users extends Component {
     constructor (props) {
         super(props);
+        console.log('constructor props =', props);
+        this.state = {
+            users: {},
+            isPinging: false,
+            username: '',
+            user: {}
+        };
     }
-    state = {
-        users: {}
-    };
-
+//componentDidMount - срабатывает после того, как компонент был отрисован в DOM.
+//вызывается после рендеринга компонента. Здесь можно выполнять запросы к удаленным ресурсам
     componentDidMount() {
-        this.callApi()
-            .then(res => {
-                this.setState({
-                    users: res,
-                });
-            })
-            .catch(err => console.log(err));
+        this.f_usersFetch();
     };
 
-    callApi = async () => {
-        const response = await fetch('/api/users');
-        const body = await response.json();
-        if (response.status !== 200) throw Error(body.message);
+    shouldComponentUpdate(props){
+        console.log("shouldComponentUpdate()", props);
+        return true;
+        // if (props.users && props.users.length > 0 ){
+        //     console.log('true');
+        //     return true;
+        // }else{
+        //     console.log('false');
+        //     return false;
+        // }
+    }
 
-        return body;
-    };
 
-    // addUser = (username, town) => {
-    //     this.props.onAddUser(username, town);
-    //     console.log('!!! props', this.props);
+//componentWillReceiveProps вызывается при обновлении объекта props. Новые значения этого объекта
+// передаются в функции в качестве параметра. Как правило, в этой функции устанавливаются
+// свойства компонента, в том числе из this.state,
+    componentWillReceiveProps(props) {
+        console.log("componentWillReceiveProps()", props);
+        this.setState({
+            users: props.users,
+            isPinging: props.isPinging,
+            username: props.username,
+            user: props.user
+        })
+    }
+
+
+    componentWillUpdate(){
+        console.log("componentWillUpdate()");
+    }
+    componentDidUpdate(){
+        console.log("componentDidUpdate()");
+    }
+
+
+
+    // callApi_addUser = async (username) => {
+    //     const response = await fetch('/api/users', {
+    //         method: 'POST',
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({
+    //             username: username,
+    //         })}
+    //     );
+    //     if (response.status !== 403) {
+    //         const body = await response.json();
+    //         if (response.status !== 200) throw Error(body.message);
+    //         return body;
+    //     } else {
+    //         //this.rowColor(response.statusText);
+    //         console.log('204', response.statusText);
+    //     }
+    // };
+    // addUser = (username) => {
+    //     this.callApi_addUser(username)
+    //         .then(res => {
+    //             if (res) {
+    //                 this.setState({
+    //                     users: res
+    //                 });
+    //             }
+    //         })
+    //         .catch(err => console.log(err));
+    // };
+    // delUser = (user) => {
+    //   console.log('del user = ', user.name);
+    //     this.callApi_delUser(user)
+    //         .then(res => {
+    //             if (res) {
+    //                 this.setState({
+    //                     users: res
+    //                 });
+    //             }
+    //         })
+    //         .catch(err => console.log(err));
+    // };
+    // callApi_delUser = async (user) => {
+    //     console.log('del', user);
+    //     const response = await fetch('/api/users', {
+    //         method: 'DELETE',
+    //         headers: {
+    //             'Accept': 'application/json',
+    //             'Content-Type': 'application/json',
+    //         },
+    //         body: JSON.stringify({
+    //             user: user,
+    //         })}
+    //     );
+    //     const body = await response.json();
+    //     if (response.status !== 200) throw Error(body.message);
+    //     return body;
     // };
 
-    callApi_addUser = async (username) => {
-        const response = await fetch('/api/users', {
-            method: 'POST',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                username: username,
-            })}
-        );
-        if (response.status !== 403) {
-            const body = await response.json();
-            if (response.status !== 200) throw Error(body.message);
-            return body;
-        } else {
-            //this.rowColor(response.statusText);
-            console.log('204', response.statusText);
-        }
+    f_userAdd = (username) => {
+        console.log('f_userAdd ', username);
+        this.props.onAddUser(username);
+    };
+    f_usersFetch = () => {
+        console.log('t_usersFetch');
+        this.props.onFetchUsers();
     };
 
-    addUser = (username) => {
-        this.callApi_addUser(username)
-            .then(res => {
-                if (res) {
-                    this.setState({
-                        users: res
-                    });
-                }
-            })
-            .catch(err => console.log(err));
+    f_userDel = (user) => {
+      console.log('f_userDel ', user);
+      this.props.onDelUser(user);
     };
-
-
-
-    delUser = (user) => {
-      console.log('del user = ', user.name);
-        this.callApi_delUser(user)
-            .then(res => {
-                if (res) {
-                    this.setState({
-                        users: res
-                    });
-                }
-            })
-            .catch(err => console.log(err));
-    };
-
-
-    callApi_delUser = async (user) => {
-        console.log('del', user);
-        const response = await fetch('/api/users', {
-            method: 'DELETE',
-            headers: {
-                'Accept': 'application/json',
-                'Content-Type': 'application/json',
-            },
-            body: JSON.stringify({
-                user: user,
-            })}
-        );
-        const body = await response.json();
-        if (response.status !== 200) throw Error(body.message);
-        return body;
-    };
-
-
 
     render() {
-        const usersList = [...this.state.users];
 
-        console.log('-------', this.props.users);
+        const usersList = () => {
+            if(this.state.users){
+                return [...this.state.users];
+            } else {
+                return null }};
+
+         //console.log('render-------props--', this.props.isPinging, this.props.username, this.props.users);
+        console.log('render-------State--', this.state.isPinging, this.state.username, this.state.users);
+
         return (
             <div>
                 <h1>Users</h1>
-
-                <div className="container">
-                    <h1>It's secret page!!!</h1>
-                    <h2>is pinging: <strong>{this.props.isPinging.toString()}</strong></h2>
-                    <button onClick={()=>{userAdd}}>Start PING</button>
-                </div>
 
                 {/*<div className="container">*/}
                     {/*<h2>is pinging: <strong>{this.props.isPinging.toString()}</strong></h2>*/}
@@ -153,7 +163,7 @@ class Users extends Component {
                         type="submit"
                         onClick={(e) => {
                         e.preventDefault();
-                        this.addUser(this.usernameInput.value);
+                        this.f_userAdd(this.usernameInput.value);
                         this.usernameInput.value = '';
                     }}><i className="fa fa-user"></i> Add</Button>
 
@@ -172,8 +182,9 @@ class Users extends Component {
                         <tbody id="likeTable">
 
 
-                    {
-                        usersList.map(
+                    { usersList() &&
+                        usersList().length > 0 &&
+                        usersList().map(
                             (item, index) => (
                                 <tr key={index} id = {index}>
                                     <td>{item.id}</td>
@@ -182,7 +193,8 @@ class Users extends Component {
                                     <td>
                                         <Button
                                             bsSize="xsmall" bsStyle="danger"
-                                            onClick={() => this.delUser(item)}
+                                            //onClick={() => this.delUser(item)}
+                                            onClick={() => this.f_userDel(item)}
                                         >
                                             del
                                         </Button>
@@ -194,47 +206,57 @@ class Users extends Component {
                         </tbody>
                     </Table>
                 </div>
-
+                <div className="container">
+                    <h2>test userEpic: <strong>{this.props.isPinging.toString()}</strong></h2>
+                    <button onClick={this.f_userAdd}>test Add</button>
+                    <button onClick={this.f_usersFetch}>test Fetch</button>
+                </div>
             </div>
         )
     }
 }
 
-function mapStateToProps(state) {
-    //const isPinging  = state.usersReducer.isPinging;
-    return {
-        isPinging: state.usersReducer.isPinging
-    }
-}
-
-
-Users = connect(
-    mapStateToProps,
-    { userAdd }
-)(Users);
-
-
-export default Users;
-
-// function mapStateToProps (state) {
-//     console.log('state', state);
+// function mapStateToProps(state) {
+//     //const isPinging  = state.usersReducer.isPinging;
 //     return {
-//         mess: state.usersReducer.mess,
-//         users: state.usersReducer
-//
+//         isPinging: state.usersReducer.isPinging
 //     }
-// };
+// }
 //
-// const mapDispatchToProps = (dispatch) => {
-//     return {
-//         onAddUser: (username, town) => { dispatch(userAdd(username, town)) },
 //
-//     }
-// };
 // Users = connect(
 //     mapStateToProps,
-//     mapDispatchToProps
+//     { userAdd }
 // )(Users);
 
+
 //export default Users;
+
+function mapStateToProps (state) {
+    console.log('state', state);
+    return {
+        isPinging: state.usersReducer.isPinging,
+        username: state.usersReducer.username,
+        users: state.usersReducer.users,
+        user: state.usersReducer.user
+        // mess: state.usersReducer.mess,
+        // users: state.usersReducer
+
+    }
+};
+
+const mapDispatchToProps = (dispatch) => {
+    return {
+        onAddUser: (username) => { dispatch(userAdd(username)) },
+        onFetchUsers: () => { dispatch(usersFetch()) },
+        onDelUser: (user) => {dispatch(userDel(user))}
+
+    }
+};
+Users = connect(
+    mapStateToProps,
+    mapDispatchToProps
+)(Users);
+
+export default Users;
 

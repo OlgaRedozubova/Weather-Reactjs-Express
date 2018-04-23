@@ -8,4 +8,8 @@ const UsersSchema = new Schema({
     towns : 'string'
 });
 
+UsersSchema.static('findByNamePass', function (name,pass, callback) {
+    return this.find({ name: name, password: pass }, callback);
+});
+
 module.exports.UsersSchema = UsersSchema;

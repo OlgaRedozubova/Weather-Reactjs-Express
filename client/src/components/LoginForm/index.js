@@ -31,6 +31,10 @@ export default ( {login} ) =>{
                     }}
                 >Sign in</Button>
 
+                <div className="notRegister">
+                    <p>Not registered? <strong><a href="#">Create an Account.</a></strong></p>
+                </div>
+
             </Form>
         )
 }

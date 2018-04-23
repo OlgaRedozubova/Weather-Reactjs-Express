@@ -206,11 +206,11 @@ class Users extends Component {
                         </tbody>
                     </Table>
                 </div>
-                <div className="container">
-                    <h2>test userEpic: <strong>{this.props.isPinging.toString()}</strong></h2>
-                    <button onClick={this.f_userAdd}>test Add</button>
-                    <button onClick={this.f_usersFetch}>test Fetch</button>
-                </div>
+                {/*<div className="container">*/}
+                    {/*<h2>test userEpic: <strong>{this.props.isPinging.toString()}</strong></h2>*/}
+                    {/*<button onClick={this.f_userAdd}>test Add</button>*/}
+                    {/*<button onClick={this.f_usersFetch}>test Fetch</button>*/}
+                {/*</div>*/}
             </div>
         )
     }

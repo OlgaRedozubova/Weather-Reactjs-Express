@@ -13,11 +13,35 @@ class Login extends Component{
     constructor(props){
         super(props);
         this.state = {
-            mess: ''
+            mess: '',
+            isLogin: false,
+            isSingIn: false,
+            username: '',
+            payload: '',
+            password: '',
+            token: ''
         }
     }
     componentDidMount() {
         this.setState({mess: ''})
+    }
+
+    shouldComponentUpdate(props) {
+        console.log('shouldComponentUpdate', props);
+        return true;
+    }
+
+    componentWillReceiveProps(props) {
+        console.log('componentWillReceiveProps', props);
+        this.setState ({
+            mess: props.mess,
+            username: props.username,
+            payload: props.payload,
+            password: props.password,
+            token: props.token,
+            isLogin: props.isLogin,
+            isSingIn: props.isSingIn
+        })
     }
 
     getSecret = () => {
@@ -34,7 +58,8 @@ class Login extends Component{
     render() {
         window.localStorage.setItem('ls_token', this.props.token);
         window.localStorage.setItem('ls_username', this.props.username);
-        console.log('this.props', this.props);
+        console.log('Render this.props', this.props);
+        console.log('Render this.state', this.state);
         const {from} = this.props.location.state || { from: { pathname: "/" } };
          if (isLogin()) {
               return <Redirect to={from} />;
@@ -58,6 +83,7 @@ function mapStateToProps (state) {
         password: state.authReducer.password,
         token: state.authReducer.token,
         isLogin: state.authReducer.isLogin,
+        isSingIn: state.authReducer.isSingIn
     }
 };
 

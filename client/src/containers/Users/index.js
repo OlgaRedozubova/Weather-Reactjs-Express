@@ -175,6 +175,7 @@ class Users extends Component {
                         <tr>
                             <th>Id</th>
                             <th>Name</th>
+                            <th>Password</th>
                             <th>Towns</th>
                             <th>del</th>
                         </tr>
@@ -189,6 +190,7 @@ class Users extends Component {
                                 <tr key={index} id = {index}>
                                     <td>{item.id}</td>
                                     <td>{item.name}</td>
+                                    <td>{item.password}</td>
                                     <td>{item.towns}</td>
                                     <td>
                                         <Button

@@ -1,3 +1,5 @@
+//const Users from "../../client/src/containers/Users";
+
 const mongoose = require("mongoose");
 const mongoUri = require("../config/consts").mongoUri;
 const UsersSchema = require('./models/Users').UsersSchema;
@@ -29,17 +31,6 @@ exports.deleteUser = (id) => {
 exports.findUserByName = (username, password) => {
     console.log('findUserByName', username, password);
     return Users.findByNamePass(username, password);
-    // Users.findByName(username, function (err, docs) {
-    //     console.log('findUserByName user = ', docs);
-    //     return docs;
-    // });
-    //
-    // Users.find({name: username}, (err,docs) => {
-    //     return docs;
-    //
-    // });
-    //console.log('findUserByName user = ', user);
-
 };
 
 module.exports;

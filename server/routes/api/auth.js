@@ -7,7 +7,7 @@ const auth = require("../../auth.js")(); //passport/ passport-jwt
 const config = require("../../config/config.js");
 //db
 const db = require('../../db/DataBaseUtils');
-db.setUpConnection();
+
 
 
 router.route("/secret")
@@ -26,48 +26,29 @@ router.route("/secret")
 //возвращает token и id user
 router.route("/token")
     .post(function(req, res) {
-    if (req.body.name && req.body.password) {
-        const userName = req.body.name;
-        const password = req.body.password;
-
-        db.findUserByName(userName, password).then(
-            user => {
-                 if (user && user.length > 0) {
-                     var payload = {
-                         id: user._id
-                     };
-                     console.log('id', payload.id);
-                     var token = jwt.encode(payload, config.jwtSecret);
-                     res.json({
-                         token: token,
-                         username: user.name
-                     });
-                 } else {
-                     console.log('res.sendStatus(401)');
-                     res.status(401).json({message: "Login not found"});
-                 }
-                console.log('find', user);
-            }
-        );
-        //console.log('find', f);
-        // var user = users.find(function(u) {
-        //     return u.name === userName && u.password === password;
-        // });
-        // if (user) {
-        //     var payload = {
-        //         id: user.id
-        //     };
-        //     console.log('id', payload.id);
-        //     var token = jwt.encode(payload, config.jwtSecret);
-        //     res.json({
-        //         token: token,
-        //         username: user.name
-        //     });
-        // } else {
-        //     console.log('res.sendStatus(401)');
-        //     res.status(401).json({message: "passwords did not match"});
-        //     //   res.sendStatus(401);
-        // }
+        if (req.body.name && req.body.password) {
+            const userName = req.body.name;
+            const password = req.body.password;
+            db.setUpConnection();
+            db.findUserByName(userName, password).then(
+                user => {
+                    if (user && user.length > 0) {
+                        var payload = {
+                            id: user[0]._id
+                        };
+                        console.log('id', payload.id);
+                        var token = jwt.encode(payload, config.jwtSecret);
+                        res.json({
+                            token: token,
+                            username: user[0].name
+                        });
+                    } else {
+                        console.log('res.sendStatus(401)');
+                        res.status(401).json({message: "Login not found"});
+                    }
+                   // console.log('find',user[0], user[0].id);
+                }
+            );
     } else {
         console.log('res.sendStatus(401)');
         res.sendStatus(401);

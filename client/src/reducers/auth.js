@@ -13,20 +13,23 @@ export const authReducer = (state = INITIAL_STATE, action) => {
         case AUTH_REQUEST:
             return {
                 mess: 'OK',
-                payload: action.payload,
                 username: action.username,
                 password: action.password,
-                isLogin: false
+                isLogin: false,
+                isSingIn: true,
+                payload: action.payload
             };
         case AUTH_SUCCESS:
             return {
                 mess: 'OK',
+                isSingIn: true,
                 payload: action.payload,
                 isLogin: false
             }
         case AUTH_TOKEN:
             return {
               mess: 'Token',
+              isSingIn: false,
               payload: action.payload,
               token: action.payload,
               username: action.username,
@@ -35,7 +38,7 @@ export const authReducer = (state = INITIAL_STATE, action) => {
         case AUTH_SECRET:
             return {
                 mess: 'Secret',
-
+                isSingIn: true,
                 payload: action.payload,
                 isLogin: false
             };
@@ -43,13 +46,14 @@ export const authReducer = (state = INITIAL_STATE, action) => {
             return {
                 mess: 'Доступ разрешен!',
                 isLogin: true,
-
+                isSingIn: true,
                 username: action.username,
                 payload: action.payload
             };
         case  AUTH_FAILURE:
             return {
                 mess: 'Доступ запрещен!',
+                isSingIn: false,
                 isLogin: false,
                 payload: action.payload
             };
@@ -57,6 +61,7 @@ export const authReducer = (state = INITIAL_STATE, action) => {
             return{
                 mess: 'OUT',
                 isLogin: false,
+                isSingIn: false,
                 payload: '',
                 username: '',
                 password: '',
